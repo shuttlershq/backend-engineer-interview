@@ -2,10 +2,14 @@
   "name": "asset",
   "version": "1.0.0",
   "description": "An asset that beams it's location repeatedly.",
-  "main": "index.js",
+  "main": "app.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Francis Ilechukwu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
 }
