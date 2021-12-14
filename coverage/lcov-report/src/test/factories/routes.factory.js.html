@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/modules/routes/routes.validation.js</title>
+    <title>Code coverage report for src/test/factories/routes.factory.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,20 +19,20 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/modules/routes</a> routes.validation.js</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/test/factories</a> routes.factory.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>0/0</span>
             </div>
         
             
@@ -46,7 +46,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/8</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
@@ -83,14 +83,7 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a>
-<a name='L23'></a><a href='#L23'>23</a>
-<a name='L24'></a><a href='#L24'>24</a>
-<a name='L25'></a><a href='#L25'>25</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -101,41 +94,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">"use strict";
-var __importDefault = <span class="cstat-no" title="statement not covered" >(this &amp;&amp; this.__importDefault) || <span class="fstat-no" title="function not covered" >fu</span>nction (mod) {</span>
-<span class="cstat-no" title="statement not covered" >    return (mod &amp;&amp; mod.__esModule) ? mod : { "default": mod };</span>
-};
 <span class="cstat-no" title="statement not covered" >Object.defineProperty(exports, "__esModule", { value: true });</span>
-<span class="cstat-no" title="statement not covered" >exports.emitLocation = exports.connectToRoute = exports.createRoute = void 0;</span>
-const joi_1 = <span class="cstat-no" title="statement not covered" >__importDefault(require("joi"));</span>
-<span class="cstat-no" title="statement not covered" >exports.createRoute = joi_1.default.object({</span>
-    startLong: joi_1.default.string().required(),
-    startLat: joi_1.default.string().required(),
-    stopLong: joi_1.default.string().required(),
-    stopLat: joi_1.default.string().required(),
-    assetId: joi_1.default.string().required(),
-});
-<span class="cstat-no" title="statement not covered" >exports.connectToRoute = joi_1.default.object({</span>
-    long: joi_1.default.string().required(),
-    lat: joi_1.default.string().required(),
-    routeId: joi_1.default.string().required(),
-});
-<span class="cstat-no" title="statement not covered" >exports.emitLocation = joi_1.default.object({</span>
-    long: joi_1.default.string().required(),
-    lat: joi_1.default.string().required(),
-    assetId: joi_1.default.string().required(),
-});
-//# sourceMappingURL=routes.validation.js.map</pre></td></tr></table></pre>
+const routes_entity_1 = <span class="cstat-no" title="statement not covered" >require("../../modules/routes/entities/routes.entity");</span>
+<span class="cstat-no" title="statement not covered" >exports.default = <span class="fstat-no" title="function not covered" >(f</span>actory) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    factory.define('route', routes_entity_1.Routes, {</span>
+        id: factory.chance('guid'),
+        assetId: 'd5fff1c7-7be6-4b12-a9da-cc4246e9c539',
+        distance: 3,
+        start: {
+            type: 'Point',
+            coordinates: [7.287538899999995, 5.159500153964703],
+        },
+        stop: {
+            type: 'Point',
+            coordinates: [7.306781053771028, 5.140720867298387],
+        },
+        createdAt: factory.chance('date'),
+        updatedAt: factory.chance('date'),
+    });
+};
+//# sourceMappingURL=routes.factory.js.map</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->

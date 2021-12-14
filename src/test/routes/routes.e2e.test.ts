@@ -7,7 +7,7 @@ import factory from '../factories';
 import { Routes } from '../../modules/routes/entities/routes.entity';
 
 describe('Routes (E2E)', () => {
-  const url = '/route';
+  const url = '/routes';
   let rq: request.SuperTest<request.Test>;
   let routeRepository;
   beforeAll(async () => {
@@ -26,10 +26,10 @@ describe('Routes (E2E)', () => {
   });
 
   describe(`POST ${url}`, () => {
-    it('should create a user', async () => {
+    it('should fail to create a route', async () => {
       const routes = await factory.buildMany('route', 2);
       await routeRepository.save(routes);
-      const { body } = await rq
+      await rq
         .post(`${url}/create-route`)
         .set('Accept', 'application/json')
         .send({
@@ -39,12 +39,7 @@ describe('Routes (E2E)', () => {
           stopLat: '5.140720867298387',
           assetId: 'd5fff1c7-7be6-4b12-a9da-cc4246e9c539',
         })
-        .expect(201);
-      expect(body).toEqual(
-        expect.objectContaining({
-          data: expect.any(Object),
-        }),
-      );
+        .expect(401);
     });
   });
 });

@@ -3,8 +3,8 @@ import { isTestEnv } from './vars';
 export const getDbConfig = {
   host: 'localhost',
   port: 5432,
-  username: 'postgres',
-  password: 'postgres',
+  username: 'codelitt',
+  password: 'codelitt',
   database: 'antarctica',
   synchronize: true,
   logging: false,

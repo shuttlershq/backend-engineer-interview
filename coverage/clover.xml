@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1639442726773" clover="3.2.0">
-  <project timestamp="1639442726773" name="All files">
-    <metrics statements="555" coveredstatements="0" conditionals="390" coveredconditionals="0" methods="119" coveredmethods="0" elements="1064" coveredelements="0" complexity="0" loc="555" ncloc="555" packages="18" files="38" classes="38"/>
+<coverage generated="1639467760196" clover="3.2.0">
+  <project timestamp="1639467760196" name="All files">
+    <metrics statements="664" coveredstatements="0" conditionals="465" coveredconditionals="0" methods="151" coveredmethods="0" elements="1280" coveredelements="0" complexity="0" loc="664" ncloc="664" packages="19" files="41" classes="41"/>
     <package name="src">
       <metrics statements="19" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="5" coveredmethods="0"/>
       <file name="index.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/index.js">
@@ -547,15 +547,46 @@
       </file>
     </package>
     <package name="src.test.auth">
-      <metrics statements="22" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="9" coveredmethods="0"/>
+      <metrics statements="65" coveredstatements="0" conditionals="41" coveredconditionals="0" methods="20" coveredmethods="0"/>
       <file name="auth.controller.spec.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/auth/auth.controller.spec.js">
-        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
-        <line num="1" count="0" type="stmt"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
+        <metrics statements="34" coveredstatements="0" conditionals="34" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="6"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
       </file>
       <file name="auth.e2e.test.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/auth/auth.e2e.test.js">
-        <metrics statements="19" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <metrics statements="31" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="9" coveredmethods="0"/>
         <line num="2" count="0" type="cond" truecount="0" falsecount="3"/>
         <line num="3" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="5" count="0" type="stmt"/>
@@ -566,15 +597,27 @@
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
         <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
         <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.test.config">
@@ -594,15 +637,17 @@
       </file>
     </package>
     <package name="src.test.factories">
-      <metrics statements="33" coveredstatements="0" conditionals="41" coveredconditionals="0" methods="11" coveredmethods="0"/>
+      <metrics statements="39" coveredstatements="0" conditionals="41" coveredconditionals="0" methods="13" coveredmethods="0"/>
       <file name="factories.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/factories/factories.js">
-        <metrics statements="6" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <metrics statements="8" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="3" coveredmethods="0"/>
         <line num="2" count="0" type="cond" truecount="0" falsecount="3"/>
         <line num="3" count="0" type="cond" truecount="0" falsecount="4"/>
         <line num="5" count="0" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
         <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
       </file>
       <file name="index.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/factories/index.js">
         <metrics statements="23" coveredstatements="0" conditionals="34" coveredconditionals="0" methods="8" coveredmethods="0"/>
@@ -630,12 +675,88 @@
         <line num="29" count="0" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
       </file>
+      <file name="routes.factory.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/factories/routes.factory.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+      </file>
       <file name="user.factory.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/factories/user.factory.js">
         <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <line num="2" count="0" type="stmt"/>
         <line num="3" count="0" type="stmt"/>
         <line num="4" count="0" type="stmt"/>
         <line num="5" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.test.routes">
+      <metrics statements="60" coveredstatements="0" conditionals="41" coveredconditionals="0" methods="19" coveredmethods="0"/>
+      <file name="routes.controller.spec.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/routes/routes.controller.spec.js">
+        <metrics statements="34" coveredstatements="0" conditionals="34" coveredconditionals="0" methods="11" coveredmethods="0"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="3" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="9" count="0" type="cond" truecount="0" falsecount="5"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="6"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="22" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+      </file>
+      <file name="routes.e2e.test.js" path="/Users/zacrac-007/Documents/shipeasy/antatica/dist/src/test/routes/routes.e2e.test.js">
+        <metrics statements="26" coveredstatements="0" conditionals="7" coveredconditionals="0" methods="8" coveredmethods="0"/>
+        <line num="2" count="0" type="cond" truecount="0" falsecount="3"/>
+        <line num="3" count="0" type="cond" truecount="0" falsecount="4"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="18" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="32" count="0" type="stmt"/>
+        <line num="33" count="0" type="stmt"/>
+        <line num="44" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.utils">
