@@ -4,7 +4,7 @@ import { generatePostMethodHeader } from "../helpers/http_helper";
 import { Trail } from './../types/trail';
 import { postOptions } from "../config/http";
 
-declare function require(name:string): any;
+declare function require(name: string): any;
 
 const http = require('http');
 
@@ -19,7 +19,7 @@ class LocationUpdateController {
 
         console.log(`Broadcasting Trail ${trail.latitude}:${trail.longitude}`);
 
-        const req = http.request({ ...postOptions, path: `/v1/assets/${assetId}/location`, method: 'POST' }, (res: any) => {
+        const req = http.request({ ...postOptions, path: `/v1/assets/${assetId}/location`, headers: generatePostMethodHeader(body) }, (res: any) => {
             if (res.statusCode == 204) {
                 console.log("Successfully broadcasted location");
             }
@@ -29,6 +29,7 @@ class LocationUpdateController {
             console.error(error);
         })
 
+        req.write(body);
         req.end();
     }
 }
