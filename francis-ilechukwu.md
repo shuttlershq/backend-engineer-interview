@@ -12,7 +12,7 @@ The unique identifier for an asset is a numeric id that ranges from 0 to 5. (I i
 
 ## Get Started
 
-To demo this project, you have to open 3 terminal tabs or windows with each of them in the `asset`, `service` and `client` folders respectively.
+To demo this project, you have to open 3 terminal tabs or windows with each of them in the `asset`, `service` and `client` folders respectively, and run `npm install` in each of them.
 
 ### service
 
