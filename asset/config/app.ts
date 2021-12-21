@@ -3,7 +3,7 @@ const config: {
     broadcastInterval: number;
 } = {
     baseUrl: 'localhost',
-    broadcastInterval: 10000
+    broadcastInterval: 5000
 };
 
 export default config;
