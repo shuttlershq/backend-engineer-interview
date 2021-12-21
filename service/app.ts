@@ -45,7 +45,7 @@ wss.on('connection', function connection(ws) {
         if (payload.id) {
             // If sigkill is undefined or false, this part is running for the first time for a single connection.
             if (!payload.sigkill) console.log(`Client with ID: ${payload.id} Connected.`);
-            
+
             ws.send(JSON.stringify({ message: "Subscribed successfully" }));
             clients[payload.id as string] = setInterval(function () {
                 try {
@@ -54,7 +54,7 @@ wss.on('connection', function connection(ws) {
                     console.log(error, e);
                     clearInterval(clients[payload.id as string]);
                 }
-            }.bind(this), 2000);
+            }.bind(this), 5000);
         } else if (payload.sigkill) {
             console.log(`Closing Connection with Client: ${payload.id}`);
             clearInterval(clients[payload.id as string]);
