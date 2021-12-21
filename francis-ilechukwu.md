@@ -37,4 +37,4 @@ Go to the CLI window or tab that's at the `client` folder location and run `npm 
 
 A typical way i'd run this project is shown below.
 
-![Sample](https://github.com/francis94c/backend-engineer-interview/blob/master/assets/images/sample.png?raw=true)
+![Sample](https://github.com/francis94c/backend-engineer-interview/blob/develop/images/sample.png?raw=true)
