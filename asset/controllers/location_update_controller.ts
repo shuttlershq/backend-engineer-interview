@@ -14,7 +14,7 @@ class LocationUpdateController {
 
         let body = {
             latitude: trail.latitude,
-            longitude: trail.longitude
+            longitude: trail.longitude,
         };
 
         console.log(`Broadcasting Trail ${trail.latitude}:${trail.longitude}`);
@@ -29,7 +29,7 @@ class LocationUpdateController {
             console.error(error);
         })
 
-        req.write(body);
+        req.write(JSON.stringify(body));
         req.end();
     }
 }
