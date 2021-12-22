@@ -1,22 +1,23 @@
-import hypotheticalTrailSets from "./models/mocks";
-import { error, warning } from "./config/console_colors";
 import config from "./config/app";
 import LocationUpdateController from "./controllers/location_update_controller";
 
-declare var process: {
-    argv: Array<string>,
-    exit: Function
+class AssetApp {
+    // Internal Running Flag.
+    private running: boolean = false;
+
+    run(trailNumber: number) {
+        if (this.running) {
+            console.log("Asset app already running");
+            return;
+        }
+
+        setInterval(() => {
+            LocationUpdateController.broadcastLocation(trailNumber);
+        }, config.broadcastInterval);
+
+        this.running = true;
+        console.log("Initialized!");
+    }
 }
 
-const trailNumber: number = process.argv.length > 2 ? parseInt(process.argv[2]) : 0;
-
-if (isNaN(trailNumber) || trailNumber > hypotheticalTrailSets.length - 1) {
-    console.log(error, "Invalid trail number given, please provide a number between 0 and " + (hypotheticalTrailSets.length - 1));
-    process.exit(1);
-}
-
-console.log("Initialized!");
-
-setInterval(() => {
-    LocationUpdateController.broadcastLocation(trailNumber);
-}, config.broadcastInterval);
+export default new AssetApp();
