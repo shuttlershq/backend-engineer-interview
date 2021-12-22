@@ -9,7 +9,7 @@ declare function require(name: string): any;
 const http = require('http');
 
 class LocationUpdateController {
-    broadcastLocation(assetId: number) {
+    broadcastLocation(assetId: number, callback?: (code: number) => void) {
         let trail: Trail = hypotheticalTrailSets[assetId][getRandomNumber(0, hypotheticalTrailSets.length - 1)];
 
         let body = {
@@ -21,7 +21,10 @@ class LocationUpdateController {
 
         const req = http.request({ ...postOptions, path: `/v1/assets/${assetId}/location`, headers: generatePostMethodHeader(body) }, (res: any) => {
             if (res.statusCode == 204) {
-                console.log("Successfully broadcasted location");
+                console.log("Successfully Broadcasted Location");
+            }
+            if (callback != undefined) {
+                callback(res.statusCode);
             }
         })
 
