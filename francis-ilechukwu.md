@@ -38,3 +38,7 @@ Go to the CLI window or tab that's at the `client` folder location and run `npm 
 A typical way i'd run this project is shown below.
 
 ![Sample](https://github.com/francis94c/backend-engineer-interview/blob/develop/images/sample.png?raw=true)
+
+## Running Tests
+
+Please run the tests by going into the tests folder and running `bash run.sh`, As dependent services need to be up and running for the tests to pass. You need bash installed to run the command. If you are using windows, installing Git Bash is recommended (You most likely do already ;-)).
