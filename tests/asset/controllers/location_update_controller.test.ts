@@ -1,4 +1,6 @@
-import LocationUpdateController from "../../asset/controllers/location_update_controller";
+'use strict';
+
+import LocationUpdateController from "../../../asset/controllers/location_update_controller";
 
 LocationUpdateController.broadcastLocation
 
