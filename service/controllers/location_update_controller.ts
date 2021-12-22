@@ -5,6 +5,7 @@ import { Trail } from '../types/trail';
 class LocationUpdateController {
     handleLocationUpdate(req: express.Request, res: express.Response) {
         EventBus.getInstance().dispatch('new-location', {latitude: req.body.latitude, longitude: req.body.longitude, assetId: req.params.assetId});
+        res.status(204).send();
     }
 }
 
