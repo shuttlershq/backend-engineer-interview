@@ -27,6 +27,6 @@ When the asset is 100 meters away from the location of the first client, both th
 * We prefer slim controllers/transports, fat helpers/interactors
 
 ### How do I submit? ###
-* Create a branch, implement your solution and send a pull request (PR) to this repository
+* Create a github repository, implement your solution and send us the link.
 * Create a ReadMe file with `firstname-lastname.md` (where firstname and lastname are your 
   first and last name respectively) where you add relevant information on how to setup/run/test your submission
